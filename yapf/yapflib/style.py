@@ -499,6 +499,18 @@ def CreateGoogleStyle():
   style['SPLIT_PENALTY_COMPREHENSION'] = 2100
   return style
 
+def CreateKeplerStyle():
+  """Create Kepler formatting Style. In progress."""
+  style = CreateGoogleStyle()
+  style['column_limit'] = 82
+  style['split_before_dot'] = True
+  style['indent_width'] = 4
+  style['split_penalty_after_opening_bracket'] = 0
+  style['split_penalty_for_added_line_split'] = 0
+  style['split_before_closing_bracket'] = True
+  style['indent_closing_brackets'] = True
+  return style
+
 
 def CreateYapfStyle():
   """Create the YAPF formatting style."""
