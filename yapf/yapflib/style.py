@@ -536,11 +536,13 @@ _STYLE_NAME_TO_FACTORY = dict(
     google=CreateGoogleStyle,
     facebook=CreateFacebookStyle,
     yapf=CreateYapfStyle,
+    kepler=CreateKeplerStyle,
 )
 
 _DEFAULT_STYLE_TO_FACTORY = [
     (CreateFacebookStyle(), CreateFacebookStyle),
     (CreateGoogleStyle(), CreateGoogleStyle),
+    (CreateKeplerStyle(), CreateKeplerStyle),
     (CreatePEP8Style(), CreatePEP8Style),
     (CreateYapfStyle(), CreateYapfStyle),
 ]
