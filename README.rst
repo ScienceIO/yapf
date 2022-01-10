@@ -185,13 +185,14 @@ with a ``[style]`` heading. For example:
     split_before_logical_operator = true
 
 The ``based_on_style`` setting determines which of the predefined styles this
-custom style is based on (think of it like subclassing). Four
+custom style is based on (think of it like subclassing). Five
 styles are predefined:
 
 - ``pep8`` (default)
 - ``google`` (based off of the `Google Python Style Guide`_)
 - ``yapf`` (for use with Google open source projects)
 - ``facebook``
+- ``kepler`` (for use with Kepler repo)
 
 .. _`Google Python Style Guide`: https://github.com/google/styleguide/blob/gh-pages/pyguide.md
 
